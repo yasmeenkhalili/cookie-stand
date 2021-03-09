@@ -6,4 +6,18 @@ body { background-image: url(https://i.pinimg.com/originals/22/55/0d/22550d50bc9
 h1{
     box-shadow:hotpink;
     font-family: 'Source Sans Pro', sans-serif;
+    display: inline-block;
+}
+table{
+
+    border: 2px black solid;
+    border-collapse: collapse;
+    box-sizing: 10px;
+    text-align:center;
+    
+}
+
+td,th,tr{
+
+    border: 2px black solid;
 }
