@@ -21,3 +21,8 @@ td,th,tr{
 
     border: 2px black solid;
 }
+
+fieldset{
+
+    display: inline-block;
+}
