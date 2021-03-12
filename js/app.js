@@ -4,7 +4,6 @@ function randomGenerator(minCust, maxCust, avgPerSale) {
   return Math.floor(Math.random() * ((maxCust - minCust + 1) + minCust) * avgPerSale);
 }
 
-
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 let main = document.getElementById('demo');
 let table = document.createElement('table');
@@ -69,6 +68,8 @@ Paris.render();
 let Lima = new ParametersOfLocations(2, 16, 4.6, 'Lima');
 Lima.render();
 
+let locationArray=[Seattle,Tokyo, Dubai,Paris,Lima];
+
 function total(){
   main.appendChild(table);
   let footerRow=document.createElement('tfoot');
@@ -102,16 +103,11 @@ form.addEventListener('submit', function(event){
   maxCust=Math.abs(maxCust);
   avgCust=Math.abs(avgCust);
   locationName=new ParametersOfLocations (minCust,maxCust,avgCust,locationName);
+  locationArray.push(locationName);
   locationName.render();
+  // for (let i=0;i<locationArray.length;i++){
   // let sum=[];
-  // let footerRow = document.createElement('tr');
-  // while(locationName){
-  //   main.appendChild(table);
-  //  footerRow=document.createElement('tfoot');
-  // table.appendChild(footerRow);
-  // let heading = document.createElement('th');
-  // footerRow.appendChild(heading);
-  // heading.innerText = 'Total';
+  // // let footerRow = document.createElement('tr');
   // for(let i=0;i<=hours.length;i++){
   //   let data = document.createElement('td');
   //   footerRow.appendChild(data);
@@ -120,5 +116,4 @@ form.addEventListener('submit', function(event){
   //   table.appendChild(footerRow);
   // }
   // }
-
 });
