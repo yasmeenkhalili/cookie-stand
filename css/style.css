@@ -1,8 +1,32 @@
-body { background-image: url(https://i.pinimg.com/originals/22/55/0d/22550d50bc930e6802d8b65313b49c87.jpg);
-    background-size: 1750px;
-    background-repeat: no-repeat;
+body { 
+    /* background-image: url(https://i.pinimg.com/originals/22/55/0d/22550d50bc930e6802d8b65313b49c87.jpg); */
+    background-size:100%;
+    background-image: linear-gradient(
+        45deg
+        , #b5b3b3, transparent);
+    background-repeat:no-repeat;
 }
 
 h1{
     box-shadow:hotpink;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: inline-block;
+}
+table{
+
+    border: 2px black solid;
+    border-collapse: collapse;
+    box-sizing: 10px;
+    text-align:center;
+    
+}
+
+td,th,tr{
+
+    border: 2px black solid;
+}
+
+fieldset{
+
+    display: inline-block;
 }

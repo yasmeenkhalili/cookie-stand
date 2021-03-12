@@ -5,20 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <a href="index.html"; style="font-size: 30px;">Home</a>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Consumption of cookies</title>
 </head>
 <body>
-    <header>
 
+    <header>
+<h2>Adding locations</h2>
     </header>
 
 <main id="demo">
   
 </main>
+<br>
+<form id="locationForm">
+    <fieldset>
+<legend>Location Name</legend>
+<label for="locationName">Location Name</label>
+<input type="text" name="locationName" required placeholder="new location">
+
+    </fieldset>
+<br>
+
+<fieldset>
+    <legend>Location Data</legend>
+<label for="minCust">Minimum Customer</label>
+<input type="number" name="minCust" required placeholder="minimum number of customer">
 
 
+<label for="maxCust">Maximum Customer</label>
+<input type="number" name="maxCust" required placeholder="maximum number of customer">
 
- 
+<label for="avgCust">Average Customer</label>
+<input type="number" name="avgCust" required placeholder="average number of customer per sale">
+
+</fieldset>
+    <br>
+    <input type="submit" value="Send Data">
+</form>
+
 </body>
 <script src="./js/app.js"></script>  
 </html>
